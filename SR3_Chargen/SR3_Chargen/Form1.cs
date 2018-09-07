@@ -16,5 +16,25 @@ namespace SR3_Chargen
         {
             InitializeComponent();
         }
+        /// <summary>
+        /// Creates a new GameSupport Form.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void gameSupportToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form supportForm = new GameSupport();
+            supportForm.Show();
+        }
+
+        private void mainForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void newCharacterToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
